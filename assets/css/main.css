@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+button {
+  padding: 17px 35px;
+  border: none;
+  border-radius: 100px;
+}
+
+.btn-blue {
+  background-color: #0F76BC;
+  color: white;
+  border: 1px solid #0F76BC;
+}
+
+.btn-white {
+  background-color: white;
+  color: #0F76BC;
+  border: 1px solid #0F76BC;
+}
+
+header .top-bar {
+  background-color: #B52C2C;
+  height: 40px;
+}
+header .top-bar .container {
+  display: flex;
+  gap: 5px;
+  color: white;
+  align-items: center;
+  padding-top: 8px;
+}
+header .navigation nav .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+}
+header .navigation nav .row .col {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+header .navigation nav .row .col .brand img {
+  height: 62px;
+}
+header .navigation nav .row .col .nav-menu {
+  display: flex;
+  gap: 12px;
+}
+header .navigation nav .row .col .social-media {
+  display: flex;
+  gap: 12px;
+}
+header .navigation nav .row .col .social-media img {
+  max-height: 20px;
+}/*# sourceMappingURL=main.css.map */
