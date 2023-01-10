@@ -13,6 +13,7 @@ $default-gap:12px;
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 *{
@@ -36,6 +37,10 @@ button {
     padding: 17px 35px;
     border: none;
     border-radius: 100px;
+    display: flex;
+    gap: $default-gap;
+    align-items: center;
+    font-size: 18px;
 }
 
 .btn-blue {
@@ -48,6 +53,18 @@ button {
     background-color: white;
     color: $blue-colo;
     border: 1px solid $blue-colo;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    img {
+        width: 100%;
+    }
 }
 
 header {
@@ -94,6 +111,72 @@ header {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.hero {
+    .row {
+        gap: 100px;
+        .col {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: $default-gap;
+            h3 {
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: $light-blue-color;
+            }
+        }
+
+        .col {
+            padding: 50px 0;
+            .hero-img {
+                width: 600px;
+                height: 600px;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+.about-us {
+    .row {
+        .col {
+            width: 50%;
+        }
+        .images {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: $default-gap;
+            .row {
+                display: flex;
+                gap: $default-gap;
+                img {
+                    border-radius: 50px;
+                }
+                .big-img {
+                    width: 70%;
+                    height: 220px;
+                    object-fit: cover;
+                }
+
+                .small-img {
+                    width: 30%;
+                    height: 155px;
+                    object-fit: cover;
+                }
+            }
+
+            .up-row {
+                align-items: flex-end;
+            }
+            .down-row {
+                align-items: flex-start;
             }
         }
     }
